@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name+"viewport" content+"width=device-width", initial-scale=1.0>
+    <title> Facebook Login </title>
+<style>
+    body{
+        font-family: arial, sans-serif;
+        background-color: hsl(318, 100%, 90%);
+        display: flex;
+        justify-content: centre;
+        align-items: centre ;  
+        height: 100vh;
+        margin: 0;
+       }
+
+       .login-container{
+        background-color: white; 
+        padding: 40px;
+        border-radius: 8px; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align:centre;
+        width: 300px;
+    
+       }
+       h1 {
+
+        color: #1877f2; 
+        font-size: 30px; 
+        margin-bottom: 20px; 
+
+       }
+
+       input[type="text"], input[type="password"]{
+        width: 100%; 
+        padding: 12px; 
+        margin: 10px 0; 
+        border: 1px solid #ddd; 
+        border-radius: 5px;
+        box-sizing: border-box;
+       }
+       button{
+        width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+       }
+       button:hover{
+        background-color: #165eab;
+
+       }
+       a{
+        color: #1877f2;
+        text-decoration: none;
+
+       }
+       a:hover{
+        text-decoration: underline;
+       }
+       hr {
+        margin: 20px 0;
+        border:0;
+        border-top:1px solid #ddd;
+
+       }
+       p{
+        font-size:14px;
+       }
+
+</style>
+<body>
+
+    <div style="text-align: centre; padding: 50px;">
+        <h1> Facebook</h1>
+        <from action="/login" method="Post">
+            <input type="text" name="email" placeholder="Email or Phone" required> <br> <br>
+            <input type="password"  name=" Password"  placeholder="Password" required> <br> <br>
+            <button type="submit"> Log On</button><br><br>
+        </from>
+        <a href="#" > Forgotten password? </a> <br><br>
+        <hr>
+        <p> Don't have an account/ <a href="#" > Create new account</a></p>
+    </div>
+</body>
+</html>
