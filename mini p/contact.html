@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Our Village</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* Base Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      padding: 10px 20px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .navbar li {
+      margin: 5px 15px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a.active {
+      border-bottom: 2px solid #ecf0f1;
+    }
+
+    .contact {
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .contact-item {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .contact-item i {
+      font-size: 30px;
+      color: #27ae60;
+      margin-bottom: 10px;
+    }
+
+    .contact-item h3 {
+      margin: 10px 0;
+      color: #34495e;
+    }
+
+    .contact-item p {
+      margin: 5px 0;
+    }
+
+    .contact-item a.call-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #27ae60;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-col {
+      flex: 1 1 200px;
+    }
+
+    .footer-col h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-grid {
+        flex-direction: column;
+      }
+
+      .contact h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Information</h2>
+
+    <div class="contact-grid">
+
+      <div class="contact-item">
+        <i class="fas fa-store"></i>
+        <h3>Village Shops</h3>
+        <p>Phone: <a href="tel:+918087199498" class="call-btn">Call Now</a></p>
+        <p>Email: shops@village.com</p>
+        <p>Location: Main Street, Village Center</p>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-hospital-alt"></i>
+        <h3>Village Hospital</h3>
+        <p>Phone: <a href="tel:+91708381899" class="call-btn">Call Now</a></p>
+        <p>Email: hospital@village.com</p>
+        <p>Location: Village East, near the temple</p>
+        <p>Emergency: <a href="tel:911" class="call-btn">Call 911</a></p>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-tractor"></i>
+        <h3>Agriculture Department</h3>
+        <p>Phone: <a href="tel:+918668681672" class="call-btn">Call Now</a></p>
+        <p>Email: agriculture@village.com</p>
+        <p>Location: Village South, 5th Lane</p>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <h3>Village Post Office</h3>
+        <p>Phone: <a href="tel:+918935648791" class="call-btn">Call Now</a></p>
+        <p>Email: postoffice@village.com</p>
+        <p>Location: In Village Center</p>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-campground"></i>
+        <h3>Recreation Center</h3>
+        <p>Phone: <a href="tel:+918994652321" class="call-btn">Call Now</a></p>
+        <p>Email: recreation@village.com</p>
+        <p>Location: 18 Green Trail, Village Park</p>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-utensils"></i>
+        <h3>Local Restaurants</h3>
+        <p>Phone: <a href="tel:+919896254632" class="call-btn">Call Now</a></p>
+        <p>Email: food@village.com</p>
+        <p>Location: Outside the village</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>We are committed to providing essential services and recreational activities to our community.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#" class="fab fa-facebook-f"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-instagram"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
